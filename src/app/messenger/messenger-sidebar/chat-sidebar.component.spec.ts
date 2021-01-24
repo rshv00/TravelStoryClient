@@ -1,4 +1,4 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import {ChatSidebarComponent} from './chat-sidebar.component';
 
@@ -6,7 +6,7 @@ describe('ChatSidebarComponent', () => {
   let component: ChatSidebarComponent;
   let fixture: ComponentFixture<ChatSidebarComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ChatSidebarComponent]
     })
