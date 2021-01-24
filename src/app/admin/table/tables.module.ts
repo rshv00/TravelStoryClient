@@ -13,26 +13,19 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatChipsModule } from '@angular/material/chips';
-import { MatNativeDateModule } from '@angular/material/core';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { MatSortModule } from '@angular/material/sort';
-import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatSortModule} from '@angular/material/sort';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import {MatTableModule} from '@angular/material/table';
 
-import * as hljs from 'highlight.js';
-import {HIGHLIGHT_JS, HighlightJsModule} from 'angular-highlight-js';
-import * as hljsTypescript from 'highlight.js/lib/languages/typescript';
 import {MatGridListModule} from '@angular/material/grid-list';
 
-export function highlightJsFactory(): any {
-  hljs.registerLanguage('typescript', hljsTypescript);
-  return hljs;
-}
 
 @NgModule({
   imports: [
@@ -58,12 +51,8 @@ export function highlightJsFactory(): any {
     MatTooltipModule,
     MatChipsModule,
     MatButtonToggleModule,
-    HighlightJsModule.forRoot({
-      provide: HIGHLIGHT_JS,
-      useFactory: highlightJsFactory
-    }),
     MatGridListModule,
-    MatProgressBarModule
+    MatProgressBarModule,
   ],
   declarations: [],
 

@@ -13,8 +13,8 @@ import {BarGraphComponent} from './bar-graph/bar-graph.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
-import {Ng2OdometerModule} from 'ng2-odometer';
 import {SharePriceComponent} from './share-price/share-price.component';
+import {TmNgOdometerModule} from 'tm-ng-odometer';
 
 @NgModule({
   imports: [
@@ -25,7 +25,7 @@ import {SharePriceComponent} from './share-price/share-price.component';
     MatTabsModule,
     MatToolbarModule,
     MatListModule,
-    Ng2OdometerModule,
+    TmNgOdometerModule,
     MatMenuModule,
     MatChipsModule,
     MatProgressBarModule,
