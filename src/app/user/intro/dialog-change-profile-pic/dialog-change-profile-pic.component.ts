@@ -5,7 +5,7 @@ import {AngularFirestore} from '@angular/fire/firestore';
 import {Observable} from 'rxjs';
 import {UserPicDTO} from '../../../models/UserPicDTO';
 import {TokenService} from '../../../service/token.service';
-import {MatDialogRef} from '@angular/material';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-dialog-change-profile-pic',

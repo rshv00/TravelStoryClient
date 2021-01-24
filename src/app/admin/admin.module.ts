@@ -7,16 +7,17 @@ import {AdminRoutingModule} from './admin-routing.module';
 import {RouterModule} from '@angular/router';
 import {AdminFooterComponent} from './admin-footer/admin-footer.component';
 import {AdminHeaderComponent} from './admin-header/admin-header.component';
-import {
-  MatBadgeModule,
-  MatButtonModule,
-  MatFormFieldModule,
-  MatIconModule, MatInputModule,
-  MatListModule,
-  MatMenuModule,
-  MatSidenavModule, MatTableModule, MatTabsModule,
-  MatToolbarModule
-} from '@angular/material';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import {AdminSearchComponent} from './admin-header/admin-search/admin-search.component';
 import {ContactComponent} from './contact/contact.component';
 import {SearchComponent} from '../search/search.component';

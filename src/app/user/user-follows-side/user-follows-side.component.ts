@@ -2,7 +2,7 @@ import {Component, Inject, OnInit} from '@angular/core';
 import {UserSearchDTO} from '../../models/UserSearchDTO';
 import {UserService} from '../../service/user.service';
 import {ActivatedRoute} from '@angular/router';
-import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 
 @Component({

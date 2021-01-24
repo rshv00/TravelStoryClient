@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {MatDialog, MatDialogRef} from '@angular/material';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import {Observable, Subject} from 'rxjs';
 import {debounceTime, switchMap} from 'rxjs/operators';
 import {UserService} from '../../../service/user.service';

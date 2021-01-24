@@ -2,7 +2,7 @@ import {Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
 import {MediaService} from '../../service/media.service';
 import {ActivatedRoute} from '@angular/router';
 import {Media} from '../../models/Media';
-import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-gallery',

@@ -2,7 +2,8 @@ import {BehaviorSubject, merge as observableMerge, Observable} from 'rxjs';
 
 import {map} from 'rxjs/operators';
 import {DataSource} from '@angular/cdk/collections';
-import {MatPaginator, MatSort} from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 
 
 import {UserData} from '../interfaces';

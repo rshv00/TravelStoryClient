@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {AgmMap, MapsAPILoader} from '@agm/core';
+import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
   selector: 'cdk-google-map',
@@ -13,8 +14,8 @@ export class GoogleMapComponent implements OnInit {
   lng: number = 23.997630;
   zoom: number = 8;
   height: string = '500px';
-  @ViewChild('mapContainer') mapContainer: any;
-  @ViewChild(AgmMap) private myMap: any;
+  @ViewChild('mapContainer', {static: false}) mapContainer: any;
+  @ViewChild(AgmMap, {static: false}) private myMap: any;
 
   constructor(private mapsAPILoader: MapsAPILoader) {
   }

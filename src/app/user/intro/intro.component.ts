@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {User} from '../../models/User';
 import {ActivatedRoute} from '@angular/router';
 import {UserService} from '../../service/user.service';
-import {MatDialog} from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import {DialogChangeProfilePicComponent} from './dialog-change-profile-pic/dialog-change-profile-pic.component';
 import {DialogChangeBackgroundImageComponent} from './dialog-change-background-image/dialog-change-background-image.component';
 import {TokenService} from '../../service/token.service';

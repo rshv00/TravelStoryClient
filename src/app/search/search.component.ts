@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {MatDialog, MatDialogRef} from '@angular/material';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import {Observable, Subject} from 'rxjs';
 import {PagableUserSearch} from '../models/PagableUserSearch';
 import {UserSearchDTO} from '../models/UserSearchDTO';

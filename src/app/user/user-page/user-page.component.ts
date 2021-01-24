@@ -5,7 +5,7 @@ import {User} from '../../models/User';
 import {TravelStory} from '../../models/TravelStory';
 import {TranslateService} from '@ngx-translate/core';
 import {TravelStoryService} from '../../service/travel-story.service';
-import {MatDialog} from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import {DialogAddTravelStoryComponent} from './dialog-add-travel-story/dialog-add-travel-story.component';
 import {DialogEditTravelStoryComponent} from './dialog-edit-travel-story/dialog-edit-travel-story.component';
 import {TokenService} from '../../service/token.service';

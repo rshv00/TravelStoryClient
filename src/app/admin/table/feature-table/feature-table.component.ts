@@ -3,7 +3,8 @@ import {fromEvent as observableFromEvent} from 'rxjs';
 import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ExampleDatabase, ExampleDataSource, TABLE_HELPERS} from './helpers.data';
-import {MatPaginator, MatSort} from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import {SelectionModel} from '@angular/cdk/collections';
 
 import {HttpClient} from '@angular/common/http';
@@ -17,15 +18,14 @@ import {UserService} from './userService';
 })
 export class FeatureTableComponent implements OnInit {
 
-  showNavListCode;
   displayedColumns = ['userId', 'userName', 'email', 'dateOfBirth', 'dateOfRegistration', 'gender', 'role', 'lastActivity'];
   exampleDatabase = new ExampleDatabase();
   selection = new SelectionModel<string>(true, []);
   dataSource: ExampleDataSource | null;
   allfeatures = TABLE_HELPERS;
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
-  @ViewChild('filter') filter: ElementRef;
+  @ViewChild(MatPaginator, {static: false}) paginator: MatPaginator;
+  @ViewChild(MatSort, {static: false}) sort: MatSort;
+  @ViewChild('filter', {static: false}) filter: ElementRef;
   users: User[];
   private online: string;
   pageSize: number;
